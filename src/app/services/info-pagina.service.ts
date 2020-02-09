@@ -14,12 +14,11 @@ export class InfoPaginaService {
 
   constructor( private http: HttpClient ) { 
 
-    console.log('Servicio de Info Página listo!');
+    // console.log('Servicio de Info Página listo!');
 
     // Leer archivo JSON
     this.cargarInfo();
     this.cargarEquipo();
-    
   }
 
   private cargarInfo(){
@@ -27,8 +26,7 @@ export class InfoPaginaService {
     .subscribe( (resp: InfoPagina) => {
       this.cargada = true;
       this.info = resp;
-      console.log(resp);
-      
+      // console.log(resp);
     } )
   }
 
@@ -37,8 +35,7 @@ export class InfoPaginaService {
     .subscribe( (resp: InfoEquipo[]) => {
       this.cargada = true;
       this.infoEquipo = resp;
-      console.log(resp);
-      
+      // console.log(resp);
     } )
   }
 

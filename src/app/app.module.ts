@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ObjetoaarregloPipe } from './pipes/objetoaarreglo.pipe';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ObjetoaarregloPipe } from './pipes/objetoaarreglo.pipe';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    ObjetoaarregloPipe
+    ObjetoaarregloPipe,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
